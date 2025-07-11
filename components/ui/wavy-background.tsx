@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useMemo } from "react";
 
 export const WavyBackground = ({
   children,
@@ -24,16 +24,16 @@ export const WavyBackground = ({
   waveOpacity?: number;
   [key: string]: unknown;
 }) => {
-  const colors_ = colors ?? [
+  const colors_ = useMemo(() => colors ?? [
     "#1D4ED8",
     "#2563EB", 
     "#3B82F6",
     "#60A5FA",
     "#93BBFC",
-  ];
+  ], [colors]);
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationId = useRef<number>();
+  const animationId = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -141,7 +141,7 @@ export const WavyBackground = ({
         cancelAnimationFrame(animationId.current);
       }
     };
-  }, [speed, backgroundFill, colors]);
+  }, [speed, backgroundFill, colors_]);
 
   return (
     <div
