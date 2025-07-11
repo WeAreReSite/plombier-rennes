@@ -3,7 +3,7 @@
 
 import React from "react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Star, UserCircle, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Star, UserCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { manrope } from "@/lib/fonts";
 
@@ -94,7 +94,7 @@ const ReviewCard = ({ review }: { review: Review }) => {
         </div>
       </div>
       <p className="text-base text-neutral-700 dark:text-neutral-200 leading-relaxed mb-6 flex-grow italic">
-        "{review.text}"
+        &ldquo;{review.text}&rdquo;
       </p>
       <div className="mt-auto flex justify-between items-center pt-5 border-t border-slate-200 dark:border-slate-700">
         <div className="flex items-center">

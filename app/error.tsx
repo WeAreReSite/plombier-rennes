@@ -50,7 +50,7 @@ export default function Error({
         </h1>
         
         <p className="text-gray-600 mb-8">
-          Il semble qu'il y ait eu un problème technique. Ne vous inquiétez pas, 
+          Il semble qu&apos;il y ait eu un problème technique. Ne vous inquiétez pas, 
           nos experts sont sur le coup !
         </p>
 
@@ -72,7 +72,7 @@ export default function Error({
               className="px-6 py-3 bg-gray-200 text-gray-700 rounded-lg font-medium hover:bg-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
               aria-label="Retour à l'accueil"
             >
-              Retour à l'accueil
+              Retour à l&apos;accueil
             </motion.button>
           </Link>
         </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Footer from '@/components/Footer';
+import { Footer } from '@/components/Footer';
 import { siteConfig } from '@/config/site';
 import { manrope } from '@/lib/fonts';
 import { Shield, Database, Lock, Eye, UserCheck, Cookie, Mail } from 'lucide-react';

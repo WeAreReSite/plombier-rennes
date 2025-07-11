@@ -248,7 +248,7 @@ export default function ContactPage() {
                   
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Urgence de l'intervention
+                      Urgence de l&apos;intervention
                     </label>
                     <div className="flex gap-4">
                       <label className="flex items-center cursor-pointer">
@@ -273,7 +273,7 @@ export default function ContactPage() {
                           className="mr-2"
                           aria-label="Intervention urgente"
                         />
-                        <span className="text-red-600 font-medium">Urgent (aujourd'hui)</span>
+                        <span className="text-red-600 font-medium">Urgent (aujourd&apos;hui)</span>
                       </label>
                     </div>
                   </div>
@@ -346,7 +346,7 @@ export default function ContactPage() {
                       ) : (
                         <>
                           <AlertCircle className="w-5 h-5" />
-                          <span>Une erreur s'est produite. Veuillez réessayer ou nous contacter par téléphone.</span>
+                          <span>Une erreur s&apos;est produite. Veuillez réessayer ou nous contacter par téléphone.</span>
                         </>
                       )}
                     </motion.div>
@@ -392,7 +392,7 @@ export default function ContactPage() {
                 {/* Business Hours */}
                 <div className="bg-white rounded-2xl p-6 shadow-lg">
                   <h3 className={`text-xl font-bold mb-4 ${manrope.className}`}>
-                    Horaires d'ouverture
+                    Horaires d&apos;ouverture
                   </h3>
                   <div className="space-y-2">
                     <div className="flex justify-between items-center py-2 border-b">
@@ -413,10 +413,10 @@ export default function ContactPage() {
                 {/* Service Area */}
                 <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6">
                   <h3 className={`text-xl font-bold mb-4 ${manrope.className}`}>
-                    Zone d'intervention
+                    Zone d&apos;intervention
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Nous intervenons rapidement dans toute l'agglomération rennaise :
+                    Nous intervenons rapidement dans toute l&apos;agglomération rennaise :
                   </p>
                   <div className="grid grid-cols-2 gap-2 text-sm">
                     {['Rennes Centre', 'Cesson-Sévigné', 'Chantepie', 'Saint-Grégoire', 

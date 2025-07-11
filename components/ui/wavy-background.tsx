@@ -7,14 +7,13 @@ export const WavyBackground = ({
   className,
   containerClassName,
   colors,
-  waveWidth,
   backgroundFill,
   blur = 10,
   speed = "slow",
   waveOpacity = 0.5,
   ...props
 }: {
-  children?: any;
+  children?: React.ReactNode;
   className?: string;
   containerClassName?: string;
   colors?: string[];
@@ -23,7 +22,7 @@ export const WavyBackground = ({
   blur?: number;
   speed?: "slow" | "fast";
   waveOpacity?: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }) => {
   const colors_ = colors ?? [
     "#1D4ED8",
@@ -81,7 +80,7 @@ export const WavyBackground = ({
 
     let increment = 0;
 
-    const drawWave = (wave: any, index: number) => {
+    const drawWave = (wave: typeof waves[0], index: number) => {
       ctx.beginPath();
       ctx.moveTo(0, h);
 
@@ -142,7 +141,7 @@ export const WavyBackground = ({
         cancelAnimationFrame(animationId.current);
       }
     };
-  }, [colors_, speed, backgroundFill]);
+  }, [speed, backgroundFill, colors]);
 
   return (
     <div

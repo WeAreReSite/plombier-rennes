@@ -66,7 +66,7 @@ export default function AboutPage() {
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
                 <span className="bg-gradient-to-r from-blue-700 to-blue-800 bg-clip-text text-transparent">
-                  L'eau est notre passion,
+                  L&apos;eau est notre passion,
                 </span>
                 <br />
                 <span className="text-gray-900">votre satisfaction notre mission</span>
@@ -132,18 +132,18 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-gray-600">
                   <p>
-                    Fondée en 2009, {siteConfig.name} est née de la passion d'un artisan 
+                    Fondée en 2009, {siteConfig.name} est née de la passion d&apos;un artisan 
                     plombier déterminé à révolutionner le service de plomberie à Rennes.
                   </p>
                   <p>
                     Au fil des années, nous avons bâti notre réputation sur trois piliers 
-                    fondamentaux : la qualité du travail, la rapidité d'intervention et 
+                    fondamentaux : la qualité du travail, la rapidité d&apos;intervention et 
                     la transparence des prix.
                   </p>
                   <p>
-                    Aujourd'hui, avec une équipe de 15 professionnels certifiés, nous 
-                    intervenons dans tout le département d'Ille-et-Vilaine, apportant 
-                    notre expertise à des milliers de foyers et d'entreprises.
+                    Aujourd&apos;hui, avec une équipe de 15 professionnels certifiés, nous 
+                    intervenons dans tout le département d&apos;Ille-et-Vilaine, apportant 
+                    notre expertise à des milliers de foyers et d&apos;entreprises.
                   </p>
                 </div>
               </motion.div>
@@ -272,7 +272,7 @@ export default function AboutPage() {
                   Prêt à travailler avec nous ?
                 </h2>
                 <p className="text-xl mb-8 opacity-90">
-                  Contactez-nous dès aujourd'hui pour tous vos besoins en plomberie
+                  Contactez-nous dès aujourd&apos;hui pour tous vos besoins en plomberie
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link href="/contact">
